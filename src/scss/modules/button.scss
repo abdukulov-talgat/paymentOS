@@ -1,0 +1,28 @@
+@use "sass:color";
+
+.button {
+  display: inline-block;
+  padding: 13px;
+  border: 0;
+  background-color: $specialColor;
+  border-radius: 4px;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  outline: 0;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+
+  &:hover,
+  &:focus {
+    background-color: color.scale($specialColor, $lightness: -15%);
+  }
+
+  &:active {
+    opacity: 0.7;
+  }
+}

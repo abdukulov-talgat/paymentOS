@@ -1,14 +1,22 @@
 // Container & Breakpoints
 @use "sass:math";
-$containerWidth: 1200;
+$containerWidth: 1080;
 $containerPadding: 40;
 $containerSidePadding: math.div($containerPadding, 2);
 
-$breakpoint1450: 1449.98px;
-$breakpoint992: 991.98px;
+
 $breakpoint768: 767.98px;
 $breakpoint480: 479.98px;
 
-$burgerBrekpoint: $breakpoint992;
+$burgerBrekpoint: $breakpoint768;
 $burgerColor: #ff0000;
 $burgerActiveColor: #0000ff;
+
+
+//Fonts
+$primaryFont : "Metropolis", sans-serif;
+
+//Colors
+$primaryColor: #9998a4;
+$secondaryColor: #232427;
+$specialColor: #2962ef;

@@ -10,14 +10,14 @@ html {
 }
 
 body {
+  min-width: 320px;
   height: 100%;
   margin: 0;
-  background-color: #f2f2f2;
-  // color: $color-primary;
-  // font-family: $font-basic;
+  background-color: #ffffff;
+  color: $primaryColor;
+  font-family: $primaryFont;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
-  text-transform: uppercase;
 }
 
