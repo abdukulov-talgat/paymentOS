@@ -1,3 +1,3 @@
-# Adaptive-Sedona
+# paymentOs
 
-## Учебный проект Sedona. Адаптивный дизайн. PUG + SCSS + GULP
+## Учебный проект paymentOs. Адаптивный дизайн. HTML + SCSS + GULP
