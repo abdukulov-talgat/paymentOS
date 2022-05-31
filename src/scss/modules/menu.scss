@@ -11,6 +11,7 @@
 
   @media (max-width: $breakpoint768) {
     position: absolute;
+    z-index: 100;
     top: 100%;
     left: 0;
     width: 100%;
@@ -81,11 +82,17 @@
 }
 
 .menu__button {
+  min-width: 110px;
+
   @media (max-width: $breakpoint768) {
     display: block;
     max-width: 320px;
     margin: 0 auto;
     // padding: 1.5rem;
     font-size: 1.5rem;
+  }
+
+  @media (max-width: 320px) {
+    margin: 0 20px;
   }
 }
