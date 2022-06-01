@@ -1,0 +1,122 @@
+.steps {
+  margin-top: 110px;
+
+  @media (max-width: $breakpoint768) {
+    margin-top: 80px;
+  }
+}
+
+.steps__container {
+  max-width: $containerWidth + $containerPadding + px;
+  padding: 0 $containerSidePadding + px;
+  margin: 0 auto;
+}
+
+.steps__inner {
+  display: grid;
+  gap: 50px 20px;
+  grid-template-columns: repeat(3, 1fr);
+
+
+  @media (max-width: $breakpoint992) {
+    gap: 20px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $breakpoint480) {
+    grid-template-columns: auto;
+  }
+}
+
+.steps__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.steps__title {
+  margin: 0;
+  margin-bottom: 15px;
+  color: $secondaryColor;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.22;
+}
+
+.steps__subtitle {
+  max-width: 281px;
+  margin: 0;
+}
+
+
+/***** STEP *****/
+.step {
+  position: relative;
+  padding: 177px 40px 91px;
+  border: 1px solid #efeff4;
+  border-radius: 8px;
+
+
+  &--bg {
+    border-color: #fafbfd;
+    background-color: #fafbfd;
+  }
+
+  &::before {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    width: 77px;
+    height: 77px;
+    background-color: #fafbfd;
+    background-image: url("@img/icons/icons.svg#people");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 35px 35px;
+    border-radius: 50%;
+    content: "";
+  }
+
+  &--safe::before {
+    background-image: url("@img/icons/icons.svg#safe");
+  }
+
+  &--account-tree::before {
+    background-image: url("@img/icons/icons.svg#account-tree");
+  }
+
+  &--request-quote::before {
+    background-image: url("@img/icons/icons.svg#request-quote");
+  }
+
+  &--account::before {
+    background-image: url("@img/icons/icons.svg#account");
+  }
+
+  @media (max-width: $breakpoint992) {
+    padding: 120px 30px 50px;
+
+    &::before {
+      top: 20px;
+      left: 30px;
+    }
+  }
+}
+
+
+.step__title {
+  margin: 0;
+  margin-bottom: 16px;
+  color: $secondaryColor;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 18px;
+}
+
+.step__text {
+  margin: 0;
+}
