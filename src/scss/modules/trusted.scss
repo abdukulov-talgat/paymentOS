@@ -36,11 +36,11 @@
   align-content: center;
   align-items: center;
   justify-content: center;
-  gap: 31px 69px;
-}
-
-.trusted__item {
+  gap: 40px 69px;
 }
 
 .trusted__img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
