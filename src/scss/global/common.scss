@@ -21,3 +21,18 @@ body {
   line-height: 1.71;
 }
 
+.main {
+  margin-bottom: 110px;
+
+  @media (max-width: $breakpoint992) {
+    margin-bottom: 80px;
+  }
+
+  @media (max-width: $breakpoint768) {
+    margin-bottom: 60px;
+  }
+
+  @media (max-width: $breakpoint480) {
+    margin-bottom: 40px;
+  }
+}
