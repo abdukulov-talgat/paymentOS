@@ -887,7 +887,11 @@ body {
   height: auto;
 }
 .footer__social-link:hover, .footer__social-link:focus {
+  color: #cd201f;
   transform: translateY(-4px);
+}
+.footer__social-link:hover .youtube-play, .footer__social-link:focus .youtube-play {
+  fill: #ffffff;
 }
 .footer__social-link:active {
   opacity: 0.6;
