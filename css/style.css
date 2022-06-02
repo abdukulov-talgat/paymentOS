@@ -46,8 +46,10 @@ html {
 }
 
 body {
+  display: flex;
   min-width: 320px;
   height: 100%;
+  flex-direction: column;
   margin: 0;
   background-color: #ffffff;
   color: #9998a4;
@@ -58,6 +60,7 @@ body {
 }
 
 .main {
+  flex-grow: 1;
   margin-bottom: 110px;
 }
 @media (max-width: 991.98px) {
@@ -685,6 +688,10 @@ body {
   opacity: 0.6;
 }
 
+.header {
+  flex-shrink: 0;
+}
+
 .header__nav {
   position: relative;
   display: flex;
@@ -775,6 +782,7 @@ body {
 }
 
 .footer {
+  flex-shrink: 0;
   padding: 97px 0 80px;
   background-color: #232427;
   color: #ffffff;
