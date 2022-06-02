@@ -1,6 +1,7 @@
 @use "sass:color";
 
 .footer {
+  flex-shrink: 0;
   padding: 97px 0 80px;
   background-color: $secondaryColor;
   color: #ffffff;

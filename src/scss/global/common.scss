@@ -10,8 +10,10 @@ html {
 }
 
 body {
+  display: flex;
   min-width: 320px;
   height: 100%;
+  flex-direction: column;
   margin: 0;
   background-color: #ffffff;
   color: $primaryColor;
@@ -22,6 +24,7 @@ body {
 }
 
 .main {
+  flex-grow: 1;
   margin-bottom: 110px;
 
   @media (max-width: $breakpoint992) {
