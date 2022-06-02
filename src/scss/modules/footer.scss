@@ -111,7 +111,12 @@
 
   &:hover,
   &:focus {
+    color: #cd201f;
     transform: translateY(-4px);
+
+    .youtube-play {
+      fill: #ffffff;
+    }
   }
 
   &:active {
